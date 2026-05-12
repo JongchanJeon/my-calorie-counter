@@ -54,7 +54,7 @@ load_dotenv()
 TOP_K = 3
 SYSTEM_PROMPT = (
     "너는 영양사 AI다. 사용자는 음식 이미지 분류기의 top-k 결과(label, score)를 줄 것이다.\n"
-    "가장 가능성 높은 음식 1인분 기준으로 칼로리(kcal)와 주요 영양소(탄수화물/단백질/지방, g)를 추정하라.\n"
+    "가장 가능성 높은 음식 1인분 기준으로 칼로리(kcal)와 주요 영양소(탄수화물/단백질/지방, g)를 추정하라\n"
     "추정이 불확실하면 그 사실을 'note' 필드에 명시하라.\n"
     "반드시 아래 JSON 스키마만 출력하고 다른 텍스트/마크다운/코드블록 금지.\n"
     '{{"food": str, "confidence": float, "calories_kcal": int, '
